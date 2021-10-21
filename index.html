@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Bozhidar | Botev </title>
+    <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+<div class="hero">
+    <nav>
+      <img src="images/menu.png" class="menu-img" id="#home">
+      <img src="images/logo.png" class="logo-img">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#merch">merchandise</a></li>
+      </ul>
+      <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+    </nav>
+    
+    <div class="lamp-container">
+      <img src="images/lamp.png" class="lamp">
+      <img src="images/light.png" class="light" id="light">
+      
+    </div>
+
+    <div class="text-container">
+      <h1>Personal<br>WebPage</h1>
+      <p>This is a website about me.. 
+        about what I do, what can I do and more!!</p>
+      <a href="#"> Check AboutPage</a>
+      <div class="control">
+        <p>04</p>
+        <div class="line"><span></span></div>
+        <p>05</p>
+      </div>
+    </div>
+   <div class="bored">
+    <img src="images/bored.png" class="bored" id="bored">
+   </div>
+
+</div>
+
+
+<script>
+  var btn = document.getElementById("btn");
+  var light = document.getElementById("light");
+  var bored = document.getElementById("bored");
+
+
+  function toggleBtn(){
+      btn.classList.toggle("active");
+      light.classList.toggle("on");
+      bored.classList.toggle("on-bored");
+  }
+</script>
+</body>
+</html>
